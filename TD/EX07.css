@@ -1,0 +1,23 @@
+table
+{
+    border: 6px solid grey;
+    margin: auto;
+    border-collapse: collapse;
+}
+table tr
+{
+    height: 100px;
+}
+table tr td
+{
+    width: 100px;
+    border: 1px solid black;
+}
+.black
+{
+    background-color: black;
+}
+.white
+{
+    background-color: white;
+}

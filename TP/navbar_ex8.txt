@@ -1,0 +1,48 @@
+html--->
+<nav>
+        <ul class="conteneur">
+             <li class="Accueil"><a href="#">Accueil</a></li>
+             <li class="Apropos"><a href="#" >A Propos De La Fst</a></li>
+             <li class="formation"><a href="#" >Formation</a></li>
+             <li class="Recherche"><a href="#" >Recherche Scientifique</a></li>
+             <li class="Espace"><a href="#" >Espace Etudiants</a></li>
+             <li class="Contact"><a href="#" >Contact</a></li>
+       </ul>
+    </nav>
+
+css --->
+
+nav ul li{
+    width:200px;
+    height:50px;
+    background-color: blue;
+    text-align:center;
+    vertical-align: middle;
+    display:table-cell;
+    
+}
+nav ul 
+{ 
+   list-style-type: none;
+}
+
+.Accueil{
+    background-color:orange;
+}
+nav ul li a{
+    display:flex;
+    justify-content: center;
+    color:white;
+    font-size: small;
+    text-decoration: none;
+    align-items: center;
+    width:100%;
+    height:100%;
+
+    text-align:center;
+    
+}
+nav ul li :hover
+{
+    background-color:palevioletred;
+}

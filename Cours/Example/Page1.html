@@ -1,0 +1,188 @@
+<HTML>
+	<HEAD>
+		<TITLE>Manipulation des tableaux</TITLE>
+		<link rel="stylesheet" href="Style.css" type="text/css">
+		<style>
+			.Tab
+			{
+				border:5px solid blue;
+			}
+
+			.Tab tr:nth-child(2n)
+			{
+				background-color:#FFCCAA;
+			}
+			.Tab tr:nth-child(2n+1)
+			{
+				background-color:#AACCFF;
+			}
+			.Tab tr:nth-child(1)
+			{
+				background-color:#CCAA66;
+			}
+		</style> 
+	</HEAD>
+	<BODY>
+		<table cellspacing="0" style="width:50%; border:2px solid navy; margin:0px auto; background:url('back.png');">
+			<caption id="Cap">Répertoire</caption>
+			<tr>
+				<th>Bill</th>
+				<th style="font-weight:900;font-family:tahoma;">Gates</th>
+				<th>62</th>
+			</tr>
+
+			<tr>
+				<td>Steve</td>
+				<td>Jobs</td>
+				<td>56</td>
+			</tr>
+		</table>
+		<hr>
+		<table cellspacing="0" style="width:50%; border:2px solid navy; margin:0px auto; background:url('back.png');">
+			<tr>
+				<td colspan="3" align="center" valign="center" style="background-color:navy;color:yellow;font-size:18px;">Répertoire</td>
+			</tr>
+
+			<tr>
+				<th>Bill</th>
+				<th style="font-weight:900;font-family:tahoma;">Gates</th>
+				<th>62</th>
+			</tr>
+
+			<tr>
+				<td>Steve</td>
+				<td>Jobs</td>
+				<td>56</td>
+			</tr>
+		</table>
+		<hr>
+		<table class="Tab">
+			<tr>
+				<td rowspan="2">L1C1</td>
+				<td>L1C2</td>
+				<td colspan="2">L1C3</td>
+			</tr>
+			<tr>
+				<td colspan="2" rowspan="2">L2C2</td>
+				<td>L2C4</td>
+			</tr>
+			<tr>
+				<td>L3C1</td>
+				<td rowspan="2">L3C4</td>
+			</tr>
+			<tr>
+				<td colspan="2">L4C1</td>
+				<td>L4C3</td>
+			</tr>
+		</table>
+
+		<hr>
+		<table class="Tab" style="border:0px solid blue;">
+			<caption>Répertoire</caption>
+			<tr>
+				<td style="vertical-align:top;">L1C1</td>
+				<td>L1C2</td>
+				<td>L1C3</td>
+				<td>L1C4</td>
+			</tr>
+			<tr>
+				<td>L2C1</td>
+				<td>L2C2</td>
+				<td>L2C3</td>
+				<td>L2C4</td>
+			</tr>
+			<tr>
+				<td>L3C1</td>
+				<td>L3C2</td>
+				<td>L3C3</td>
+				<td>L3C4</td>
+			</tr>
+			<tr>
+				<td>L4C1</td>
+				<td>L4C2</td>
+				<td>L4C3</td>
+				<td>L4C4</td>
+			</tr>
+		</table>
+		<hr>
+		<table class="Tab">
+			<thead>
+				<tr>
+					<th>Nom</th>
+					<th>Prénom</th>
+					<th>Age</th>
+					<th>Adresse</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<td colspan="4" style="text-align : center ; ">Pied de page du tableau</td>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Bill</td>
+					<td>Gates</td>
+					<td>62</td>
+					<td>500 Fifth Avenue North Seattle, WA 98102, États-Unis</td>
+				</tr>
+				<tr>
+					<td>Steve</td>
+					<td>Jobs</td>
+					<td>56</td>
+					<td>2101 Waverley Street Palo Alto, CA 94301</td>
+				</tr>
+				<tr>
+					<td>Bill</td>
+					<td>Gates</td>
+					<td>62</td>
+					<td>500 Fifth Avenue North Seattle, WA 98102, États-Unis</td>
+				</tr>
+				<tr>
+					<td>Steve</td>
+					<td>Jobs</td>
+					<td>56</td>
+					<td>2101 Waverley Street Palo Alto, CA 94301</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
+		<table class="Tab">
+			<tr style="height:20px;">
+				<th>Nom</th>
+				<th>Prénom</th>
+				<th>Age</th>
+				<th>Adresse</th>
+			</tr>
+			<tr>
+				<td>Bill</td>
+				<td>Gates</td>
+				<td>62</td>
+				<td>500 Fifth Avenue North Seattle, WA 98102, États-Unis</td>
+			</tr>
+			<tr>
+				<td>Steve</td>
+				<td>Jobs</td>
+				<td>56</td>
+				<td>2101 Waverley Street Palo Alto, CA 94301</td>
+			</tr>
+			<tr>
+				<td>Bill</td>
+				<td>Gates</td>
+				<td>62</td>
+				<td>500 Fifth Avenue North Seattle, WA 98102, États-Unis</td>
+			</tr>
+			<tr>
+				<td>Steve</td>
+				<td>Jobs</td>
+				<td>56</td>
+				<td>2101 Waverley Street Palo Alto, CA 94301</td>
+			</tr>
+			<tr style="height:20px;">
+				<td colspan="4" style="text-align:center;">Pied de page du tableau</td>
+			</tr>
+		</table>
+	</BODY>
+</HTML>
+
+
+
+

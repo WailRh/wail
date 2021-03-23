@@ -1,0 +1,32 @@
+body
+{
+	margin:0px;
+	padding:0px;
+}
+.Tab
+{
+	width:96%;
+	height:96%;
+	margin:0px auto;
+	border:1px solid blue;
+	border-collapse:collapse;
+}
+.Tab caption, #Cap
+{
+	background-color:navy;
+	color:yellow;
+	font-size:20px;
+}
+
+.Tab tr
+{
+	height:24%;
+}
+
+.Tab tr td
+{
+	width:24%;
+	border:1px solid gray;
+	text-align:center;
+	vertical-align:center;
+}
