@@ -1,0 +1,47 @@
+table
+{
+    height: 90%;
+    margin: auto;
+    font-size: 30px;
+    border-collapse: collapse;
+}
+table tr th
+{
+    width: 150px;
+    height: 60px;
+    border: 2px solid navy;
+    font-size: 30px;
+    color: blueviolet;
+}
+#ac, #ac a
+{
+    
+    background-color:aquamarine;
+    text-decoration: none;
+    color: blueviolet;
+}
+table tr td
+{
+    width: 300px;
+    border: 2px solid navy;
+    font-size: 25px;
+    vertical-align: top;
+}
+#Accueil 
+{
+    border-left-color: white;
+    border-bottom-color: white;
+}
+table tr td a
+{
+    list-style-type: none;
+    line-height: 40px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+table tr td a:hover
+{
+    color: rgb(8, 149, 184);
+    font-size: 50px;
+}
