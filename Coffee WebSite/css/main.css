@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: monospace;
+  font-size: 100%;
+  line-height: 1.5em;
+  background: wheat;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li,
+div.button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #555;
+  font-size: 1.2em;
+}
+div.button {
+  height: 4em;
+  background: red;
+}
+nav ul li a {
+  color: red;
+  display: block;
+  padding: 10px;
+}
+nav ul li a:hover:not(.active) {
+  border: 2px solid black;
+  border-radius: 0.5em;
+}
+.active {
+  color: green;
+  border: 2px solid green;
+}
+header {
+  background: url("../images/beans.jpg") center/cover scroll no-repeat;
+  color: whitesmoke;
+  text-align: center;
+  border-bottom: 0.5em solid chocolate;
+}
+header h1 {
+  font-size: 8em;
+  padding-top: 1em;
+}
+header p {
+  font-size: 2em;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1em;
+  padding-top: 2.5em;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+.btn {
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 3em;
+  text-decoration: none;
+  background: red;
+  border-radius: 5em;
+  color: black;
+  padding: 1em;
+}
+.btn:hover {
+  background: black;
+  color: white;
+}
+blockquote {
+  padding: 1em;
+  font-size: 1.7em;
+  line-height: 1.3em;
+  text-align: center;
+  background: darkkhaki;
+}
+cite {
+  font-size: 0.8em;
+}
+.titles {
+  text-align: center;
+  padding: 5em;
+  line-height: 3em;
+  text-transform: capitalize;
+  background: chocolate;
+  color: wheat;
+  letter-spacing: 0.2em;
+}
+article {
+  margin: 5em 2em;
+  text-align: center;
+}
+article p {
+  text-align: justify;
+  line-height: 1.75em;
+  text-indent: 2em;
+}
+article img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+h3.titleplatforms {
+  text-align: center;
+  font-size: 2em;
+  padding: 1em;
+  line-height: 2em;
+  text-transform: capitalize;
+  background: chocolate;
+  color: wheat;
+}
+.platforms {
+  list-style: none;
+  font-size: 0.5em;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+.platforms li a {
+  color: black;
+}
+.platforms li a:hover {
+  color: red;
+}
+footer {
+  padding: 2em;
+  background: chocolate;
+  color: red;
+  text-transform: uppercase;
+  line-height: 2.5em;
+  text-align: center;
+  text-shadow: 2px 2px 1px black;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    background: #555;
+  }
+  nav ul li {
+    display: inline-block;
+    width: 8em;
+  }
+  article {
+    float: left;
+    width: 30%;
+    margin: 2em 1.6666666667%;
+  }
+  article:last-child {
+    margin-right: 0;
+  }
+  article img {
+    height: 25em;
+  }
+  article p {
+    height: 25.2em;
+    overflow: hidden;
+    margin-bottom: 2em;
+  }
+  .platforms li {
+    float: left;
+    width: 33.3333333333333333%;
+    background: wheat;
+    padding: 3em;
+  }
+  footer h1 {
+    margin-top: 3em;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Verification Date</title>
+        <script type="text/javascript">
+        function isPositifInt(str)
+        {
+            var ls = str.length;
+            if(ls == 0)
+                return false;
+            for(var i = 0; i < ls; i++)
+            {
+                var n = str.charCodeAt(i);
+                if(n < 48 || n > 57)
+                    return false;
+            }
+            return true;
+        }
+        function verifDateV1(str)
+        {
+            var pos1 = str.indexOf("/");
+            var pos2 = str.lastIndexOf("/");
+            if(str.length != 10 || pos1 != 2 || pos2 != 5)
+                return false;
+            var j, m, a;
+            j = str.substring(0, pos1);
+            m = str.substring(pos1+1, pos2);
+            a = str.substring(pos2+1);
+            if(!isPositifInt(j) || !isPositifInt(m) || !isPositifInt(a))
+                return false;
+            j = parseInt(j, 10);
+            m = parseInt(m, 10);
+            a = parseInt(a, 10);
+            var TM = new Array(0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+            if(a % 4 == 0)
+                TM[2] = 29;
+            if(j < 1 || j > TM[m] || m < 1 || m > 12 || a < 0)
+                return false;
+            return true;
+        }
+        function verifDateV2(str)
+        {
+            var TD = str.slice("/")
+            var TM = new Array(0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+            if(a % 4 == 0)
+                TM[2] = 29;
+            if(j < 1 || j > TM[m] || m < 1 || m > 12 || a < 0)
+                return false;
+            return true;
+        }
+        </script>
+    </head>
+    <body>
+        <center>
+            Saisir une date:
+            <input type="text" name="TDate" id="TDate" style="width: 250px;">
+            <br><br><br><br>
+            <input type="button" value="Tester la Date v1" onclick="javascript:alert(verifDateV1(document.getElementById('TDate').value))">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="button" value="Tester la Date v2" onclick="javascript:alert(verifDateV2(document.getElementById('TDate').value))">
+        </center>
+    </body>
+</html>
