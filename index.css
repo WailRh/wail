@@ -44,5 +44,6 @@ a:hover {
   font-size: 50px;
 }
 div {
-  margin: 2em;
+  display: block;
+  margin: 3em auto;
 }
