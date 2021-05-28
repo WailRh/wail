@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Chalenge 1: Your age in days</h2>
+      <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+      <button class="btn btn-danger" onclick="reset()">Reset</button>
+      <div id="result"></div>
+    </div>
+
+    <div class="container">
+      <h2>Chalenge 2: Cat generator</h2>
+      <button
+        class="btn btn-success"
+        id="catgenerator"
+        onclick="catGenerator()"
+      >
+        Genete cat
+      </button>
+      <button class="btn btn-danger" onclick="catRemove()">Remove cat</button>
+      <div class="container-flex" id="catgen"></div>
+    </div>
+
+    <div class="container">
+      <h2>chalenge 3: rock, paper, scissors</h2>
+      <div class="container-flex" id="interface">
+        <img
+          src="./images/rock-right.png"
+          alt="rock"
+          id="rock"
+          onclick="rpsGame(this)"
+        />
+        <img
+          src="./images/paper.png"
+          alt="paper"
+          id="paper"
+          onclick="rpsGame(this)"
+        />
+        <img
+          src="./images/scissors-right.png"
+          alt="scissors"
+          id="scissors"
+          onclick="rpsGame(this)"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>chalenge 4: change the color of all buttons</h2>
+      <select name="selector" id="selector" onchange="colorChange(this)">
+        <option value="reset">Reset</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="random">Random</option>
+      </select>
+      <button class="btn btn-primary">Wee!</button>
+      <button class="btn btn-danger">Yahoo!</button>
+      <button class="btn btn-warning">Google!</button>
+      <button class="btn btn-success">Facebook!</button>
+    </div>
+
+    <div class="container">
+      <h2>chalenge 5: BlackJack</h2>
+      <h3><span id="blackjack-result">Let's play</span></h3>
+
+      <div class="flex-blackjack-row-1">
+        <div id="your-box">
+          <h2>You: <span id="your-blackjack-result">0</span></h2>
+        </div>
+
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+        </div>
+      </div>
+
+      <div class="flex-blackjack-row-2">
+        <div>
+          <button class="btn-lg btn-primary mg-2" id="blackjack-hit-button">
+            Hit
+          </button>
+          <button class="btn-lg btn-warning mg-2" id="blackjack-stand-button">
+            Stand
+          </button>
+          <button class="btn-lg btn-danger mg-2" id="blackjack-deal-button">
+            Deal
+          </button>
+        </div>
+      </div>
+
+      <div class="flex-blackjack-row-3">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="draws">0</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
