@@ -93,9 +93,9 @@ function rpsInterface(humanChoice, botChoice, msg) {
     scissors: document.getElementById("scissors").src,
   };
   let imgBot = {
-    rock: "../images/rock-left.png",
-    paper: "../images/paper.png",
-    scissors: "../images/scissors-left.png",
+    rock: "./images/rock-left.png",
+    paper: "./images/paper.png",
+    scissors: "./images/scissors-left.png",
   };
 
   document.getElementById("rock").remove();
@@ -209,9 +209,9 @@ const YOU = blackjackGame["you"];
 const DEALER = blackjackGame["dealer"];
 const CARDS = blackjackGame["cards"];
 
-const hitSound = new Audio("../sounds/swish.m4a");
-const winSound = new Audio("../sounds/cash.mp3");
-const lossSound = new Audio("../sounds/aww.mp3");
+const hitSound = new Audio("./sounds/swish.m4a");
+const winSound = new Audio("./sounds/cash.mp3");
+const lossSound = new Audio("./sounds/aww.mp3");
 
 document
   .querySelector("#blackjack-hit-button")
@@ -289,7 +289,7 @@ function balckjackDeal() {
 function showCard(currentPlayer, card) {
   if (currentPlayer["score"] <= 21) {
     let cardImage = document.createElement("img");
-    cardImage.src = `../images/${card}.png`;
+    cardImage.src = `./images/${card}.png`;
     document.querySelector(currentPlayer["div"]).appendChild(cardImage);
     hitSound.play();
   }
