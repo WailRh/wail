@@ -1,47 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Jeux de Dames avec Tableau</title>
-        <link rel="stylesheet" href="EX07(2).css">
-    </head>
-    <body>
-        <table>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeux de Dames avec Tableau</title>
+    <link rel="stylesheet" href="EX07(2).css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      table {
+        border: 6px solid grey;
+        margin: 5em auto;
+        border-collapse: collapse;
+      }
+      table tr td {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      table tr:nth-child(odd) td:nth-child(even),
+      table tr:nth-child(even) td:nth-child(odd) {
+        background: white;
+      }
+      table tr:nth-child(odd) td:nth-child(odd),
+      table tr:nth-child(even) td:nth-child(even) {
+        background: black;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
 </html>

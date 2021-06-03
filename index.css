@@ -41,7 +41,7 @@ a {
 }
 a:hover {
   color: rgb(8, 149, 184);
-  font-size: 50px;
+  transform: scale(1.2);
 }
 div {
   display: block;

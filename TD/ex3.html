@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 03</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      table {
+        margin: 5em auto;
+        border-spacing: 0;
+      }
+
+      table td {
+        text-align: center;
+        width: 150px;
+        height: 150px;
+      }
+
+      .top {
+        vertical-align: top;
+      }
+      .vcenter {
+        vertical-align: center;
+      }
+      .bottom {
+        vertical-align: bottom;
+      }
+
+      .left {
+        text-align: left;
+      }
+      .hcenter {
+        text-align: center;
+      }
+      .right {
+        text-align: right;
+      }
+
+      .pink {
+        background: pink;
+      }
+      .red {
+        background: red;
+      }
+      .violet {
+        background: violet;
+      }
+      .aquamarine {
+        background: aquamarine;
+      }
+      .aqua {
+        background: aqua;
+      }
+      .green {
+        background: green;
+      }
+      .yellow {
+        background: yellow;
+      }
+      .blue {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td colspan="2" rowspan="2" class="top left pink">L1C1</td>
+        <td class="left bottom red">L1C3</td>
+        <td rowspan="2" class="left bottom violet">L1C4</td>
+      </tr>
+      <tr>
+        <td class="hcenter bottom aquamarine">L2C2</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="top right aqua">L3C1</td>
+        <td colspan="2" rowspan="2" class="right bottom green">L3C3</td>
+      </tr>
+      <tr>
+        <td class="top hcenter yellow">L4C1</td>
+        <td class="vcenter hcenter blue">L4C2</td>
+      </tr>
+    </table>
+  </body>
+</html>

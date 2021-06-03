@@ -1,29 +1,187 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>EX05</title>
-    </head>
-    <body>
-        <table cellspacing="0" align="center">
-            <tr height="200">
-                <td align="right" valign="bottom" width="200" style="background-color:green;">L1C1</td>
-                <td width="200" style="background-color:aqua;">L1C2</td>
-                <td width="200" style="background-color:blue;">L1C3</td>
-            </tr>
-            <tr height="200">
-                <td style="background-color:aqua;">L2C1</td>
-                <td colspan="2" style="background-color:pink;">
-                    <div>
-                        <label>Email: </label>
-                        
-                    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 05</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #table1 {
+        margin: 5em auto;
+        border-spacing: 0;
+      }
+
+      #table1 td {
+        width: 200px;
+        height: 200px;
+      }
+
+      .top {
+        vertical-align: top;
+      }
+      .vcenter {
+        vertical-align: center;
+      }
+      .bottom {
+        vertical-align: bottom;
+      }
+
+      .left {
+        text-align: left;
+      }
+      .hcenter {
+        text-align: center;
+      }
+      .right {
+        text-align: right;
+      }
+
+      .pink {
+        background: pink;
+      }
+      .red {
+        background: red;
+      }
+      .violet {
+        background: violet;
+      }
+      .aquamarine {
+        background: aquamarine;
+      }
+      .aqua {
+        background: aqua;
+      }
+      .green {
+        background: green;
+      }
+      .yellow {
+        background: yellow;
+      }
+      .blue {
+        background: blue;
+      }
+      div {
+        width: 400px;
+        height: 200px;
+        overflow: scroll;
+        margin: 0 auto;
+        text-align: center;
+      }
+      #table2 {
+        display: inline-block;
+        border: 1px solid black;
+      }
+      #table2 th,
+      #table2 td {
+        height: 20px;
+        padding: 3px 1px;
+        border: 1px solid black;
+      }
+      #table2 th {
+        text-align: right;
+        width: 100px;
+      }
+      #table2 td {
+        text-align: left;
+        width: 200px;
+      }
+      #table2 input {
+        width: 100%;
+      }
+
+      #test {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="table1">
+      <tr>
+        <td class="bottom right pink">L1C1</td>
+        <td class="vcenter left blue">L1C2</td>
+        <td class="vcenter hcenter green">L1C3</td>
+      </tr>
+      <tr>
+        <td class="top hcenter aqua">L2C2</td>
+        <td colspan="2" class="violet">
+          <iframe
+            src="email.html"
+            frameborder="0"
+            width="100%"
+            height="100%"
+          ></iframe>
+        </td>
+      </tr>
+      <tr>
+        <td class="vcenter hcenter red">L3C1</td>
+        <td colspan="2" class="yellow">
+          <div>
+            <table id="table2">
+              <tr>
+                <th><label for="nom">Nom:</label></th>
+                <td>
+                  <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    placeholder="Mon nom"
+                    d
+                  />
                 </td>
-            </tr>
-            <tr height="200">
-                <td style="background-color:purple;">L3C1</td>
-                <td colspan="2" style="background-color:palevioletred;"></td>
-            </tr>
-        </table>
-    </body>
+              </tr>
+              <tr>
+                <th><label for="pnom">Pr&eacute;nom:</label></th>
+                <td>
+                  <input
+                    type="text"
+                    id="pnom"
+                    name="pnom"
+                    placeholder="Mon Pr&eacute;nom"
+                    d
+                  />
+                </td>
+              </tr>
+              <tr>
+                <th><label for="psw">Mot de passe:</label></th>
+                <td>
+                  <input
+                    type="password"
+                    name="psw"
+                    id="psw"
+                    placeholder="Mon mot de passe"
+                  />
+                </td>
+              </tr>
+            </table>
+            <br />
+            <hr />
+            <br />
+            <input type="checkbox" name="a" id="" />
+            <input type="checkbox" name="a" id="" />
+            <input type="checkbox" name="a" id="" />
+            <input type="checkbox" name="a" id="" />
+            <br />
+            <br />
+            <hr />
+            <br />
+            <input type="radio" name="b" id="" />
+            <input type="radio" name="b" id="" />
+            <input type="radio" name="b" id="" />
+            <input type="radio" name="b" id="" />
+            <br /><br />
+            <hr />
+            <br />
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

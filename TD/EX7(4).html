@@ -1,47 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>Jeux de Dames avec Tableau V4</title>
-        <link rel="stylesheet" href="EX07(4).css">
-    </head>
-    <body>
-        <div class="Damier">
-            <div class="row">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="row">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="row">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="row">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="row">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Jeux de Dames avec Tableau V4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .Damier {
+        height: 512px;
+        width: 512px;
+        border: 6px solid grey;
+        margin: 5em auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+      }
+      .row div {
+        height: 100px;
+        width: 100px;
+      }
+      .row:nth-child(2n + 1) div:nth-child(2n + 1),
+      .row:nth-child(2n) div:nth-child(2n) {
+        background-color: black;
+      }
+      .row:nth-child(2n + 1) div:nth-child(2n),
+      .row:nth-child(2n) div:nth-child(2n + 1) {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Damier">
+      <div class="row">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="row">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="row">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="row">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="row">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
 </html>
